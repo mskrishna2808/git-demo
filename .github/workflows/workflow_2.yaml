@@ -3,18 +3,22 @@ name: Second Workflow
 on: 
   workflow_run:
     workflows: ["First Workflow"]
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
     types:
       - completed
 
 jobs:
-  first-workflow:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Testing directory
-        run: |
-          ls -l
-          mkdir testing-2
-          ls -l
+job1:
+if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+job2:
+    first-workflow:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Testing directory
+          run: |
+            ls -l
+            mkdir testing-2
+            ls -l
 
     
