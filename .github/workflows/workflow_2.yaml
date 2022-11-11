@@ -1,4 +1,4 @@
-name: Second Workflow
+name: Second-Workflow
 
 on: 
   workflow_run:
@@ -17,5 +17,5 @@ jobs:
             ls -l
             mkdir testing-2
             ls -l
-      
+
     
