@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: Testing directory
         run: |
-        ls -al
-        mkdir testing-1
-        ls -l
+          ls -al
+          mkdir testing-1
+          ls -l
 
     

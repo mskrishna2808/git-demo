@@ -8,13 +8,13 @@ on:
       - completed
 
 jobs:
-  First-workflow:
+  first-workflow:
     runs-on: ubuntu-latest
     steps:
       - name: Testing directory
         run: |
-        ls -al
-        mkdir testing-2
-        ls -l
+          ls -l
+          mkdir testing-2
+          ls -l
 
     
