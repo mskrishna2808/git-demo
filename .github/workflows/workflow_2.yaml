@@ -10,6 +10,7 @@ on:
 jobs:
     second-workflow:
       if: ${{ github.event.workflow_run.conclusion == 'success' }}
+      environment: Second-Workflow
       runs-on: ubuntu-latest
       steps:
         - name: Testing directory

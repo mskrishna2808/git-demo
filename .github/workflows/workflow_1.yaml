@@ -10,7 +10,7 @@ jobs:
         run: |
           ls -al
           mkdir testing-1
-          echo "creating directory"
+          echo "creating directory in workflow-1"
           ls -l
 
     
