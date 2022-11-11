@@ -10,6 +10,7 @@ jobs:
         run: |
           ls -al
           mkdir testing-1
+          echo "creating directory"
           ls -l
 
     
