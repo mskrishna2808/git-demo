@@ -8,9 +8,9 @@ jobs:
     steps:
       - name: Testing directory
         run: |
-          ls -al
-          mkdir testing-1
+          ls -all
+          mkdirl testing-1
           echo "creating directory"
-          ls -l
+          ls -ll
 
     
