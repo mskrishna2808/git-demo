@@ -16,6 +16,7 @@ jobs:
           run: |
             ls -l
             mkdir testing-2
+            echo "second-workflow"
             ls -l
 
     
