@@ -8,11 +8,8 @@ on:
       - completed
 
 jobs:
-job1:
-if: ${{ github.event.workflow_run.conclusion == 'success' }}
-
-job2:
-    first-workflow:
+    second-workflow:
+      if: ${{ github.event.workflow_run.conclusion == 'success' }}
       runs-on: ubuntu-latest
       steps:
         - name: Testing directory
@@ -20,5 +17,5 @@ job2:
             ls -l
             mkdir testing-2
             ls -l
-
+      
     
