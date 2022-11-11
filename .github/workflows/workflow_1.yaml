@@ -1,0 +1,15 @@
+name: First Workflow
+
+on: [push]
+
+jobs:
+  First-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing directory
+        run: |
+        ls -al
+        mkdir testing-1
+        ls -l
+
+    
