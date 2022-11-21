@@ -14,7 +14,8 @@ env:
 jobs:
     second-workflow:
       if: ${{ github.event.workflow_run.conclusion == 'success' }}
-      environment: $SECOND
+      environment: 
+        name: ${ SECOND }
       runs-on: ubuntu-latest
       steps:
         - name: Testing directory
